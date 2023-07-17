@@ -1,0 +1,414 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #bb2424;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: rgb(249, 253, 249);
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.custom-file-upload:hover {
+  background-color: #45a049;
+}
+
+.file-name {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#file-upload {
+  display: none;
+}
+
+.upload-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+/*******************************************************************/
+
+.red-header {
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.centered-tab-panels {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding-right: 50px; /* Optional: Add some padding to the right */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  padding-right: 80px; /* Optional: Add some padding to the right */
+  margin-left: 500; /* Move the content to the right */
+  transform: translateX(350px); /* Adjust the value as needed */
+}
+
+
+/*
+.vertical-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tab-panels-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+*/
+
+/**********************************************************************************************************
+.app-container {
+  display: flex;
+}
+**********************************************************************************************************/
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+
+.green-button {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar {
+  padding: 10px;
+  border-right: 1px solid #05f205;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  /*text-align: center;*/
+}
+
+/*.Main-Body-content { 
+  padding: 10px;
+  background-color: rgb(14, 17, 223);
+}*/
+
+.tables-container{/* HAYDA HOUWE LI LEZM ASMO LA GRIDS !!!!*/
+  padding: 5px;
+  background-color: rgb(245, 245, 250);
+  
+
+  /************************************************************************************22*2*2*2*2*2*
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: calc(200px + 10px); /* Adjust the value based on the width of the sidebar */
+  /*
+  background-color: rgb(29, 234, 14);
+  */
+  
+  /*/**/
+ }
+
+ .table-container {
+  display: flex;
+  background-color: rgb(12, 237, 12);
+}
+
+.table-container > * {
+  flex: 1;
+  margin-right: 40px;
+  background-color: rgb(12, 237, 12);
+  
+}
+
+
+
+ .aircraft-list-title {
+  
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  align-items:center;
+  
+  /***************************************************************/
+
+ }
+
+ 
+.aircraft-list{
+  cursor: default;
+  font-family: 'YourHandwritingFont', cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center; /* Added this line */
+  /*align-items: center;*/
+  line-height: 2.1;
+  /*text-align: flex-start;*/
+  text-align: flex-start;;
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  border-bottom: 5px solid #d50606;
+}
+
+.aircraft div:hover, 
+.aircraft div:active {
+  
+  display: flex;
+  align-items: center;
+  cursor: default;
+  background-color: #d50606;
+
+}
+
+
+.sheets-list-title{
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  align-items:center;
+  /*margin-left: 8px;*/
+  /*margin-bottom: -5px;*/
+  
+
+}
+
+.sheets-list {
+  
+  font-family: 'YourHandwritingFont', cursive;
+  margin-top: 20px;
+  margin-bottom: -5px;
+  display: flex;
+  
+  flex-direction: column;
+  /*align-items: center;*/
+  line-height: 1.7;
+  text-align: center;
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  border-bottom: 5px solid #d50606;
+
+  
+  
+  /*align-items: center;*/
+ /* text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border-bottom: 5px solid #d50606;
+  /*width: 50%;*/
+}
+
+
+.sheets div:hover,
+.sheets div:active { /* working */ /*font of spread sheets tabs names...*/
+  
+  display: flex;
+  align-items: center;
+  cursor: default;
+  background-color: #d50606;
+  /*gap: 5px;*/
+  /*font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the desired handwriting font */
+  /*font-size: 15px;*/
+ /* letter-spacing: 2px;*/
+}
+
+.project-title{
+  
+  font-weight: bold;
+  font-size: 22px; /* Match the font size of Aircraft List */
+  margin-bottom: 15px; /* Adjust the margin to match Aircraft List */
+  font-family: 'YourHandwritingFont', cursive;
+  
+}
+
+
+
+
+
+
+
+/*******************TABLES CONTAINER MISSINGGGGGGGGGGGGGGGGGGGG**********/
+
+/***********************************************.table {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.small-table {
+  display: inline-block;
+  border-collapse: collapse;
+  font-size: 12px;
+  width: calc(25% - 7.5px);
+}********************************************/
+
+
+
+
+
+
+
+/*.tabs li .tab-icon {
+  margin-right: 5px;
+}*/
+
+
+
+/*.tabs li.active {
+  font-weight: bold;
+}*/
+
+
+
+
+
+
+/*************************************************************************************
+/*.title-section {
+  margin-bottom: 20px;
+}
+
+.title-section h2 {
+  font-size: 14px; /* Updated font size to match Aircraft List */
+  /*
+  margin-bottom: 20px;
+  font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the desired handwriting font *//*
+  letter-spacing: 2px;
+}
+
+.title-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+**********************************************************************************/
+
+
+/*.sheet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}*/
+
+/*.sheet {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}*/
+
+/*.sheet-list .title-section h2 {
+  font-size: 14px; /* Match the font size of Aircraft List */
+  /*margin-bottom: 5px; /* Adjust the margin to match Aircraft List *//*
+  font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the desired handwriting font *//*
+}
+*/
+
+/*.sheet-list .title-section h2 {
+  font-size: 14px; /* Match the font size of Aircraft List *//*
+  margin-bottom: 5px; /* Adjust the margin to match Aircraft List *//*
+  font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the desired handwriting font *//*
+}*/
+
+/*.tabs {
+  list-style-type: none; */ /* Remove the default list bullets */
+ /* padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+/*.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}*/
+
+/*.title {
+  font-size: 14px;
+  
+}*/
